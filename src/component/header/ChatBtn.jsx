@@ -4,7 +4,7 @@ export class ChatBtn extends Component {
     render() {
         return (
             <div>
-                <button>chat</button>
+                <button className="material-icons-outlined">add_box</button>
             </div>
         )
     }

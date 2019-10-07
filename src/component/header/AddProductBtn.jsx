@@ -4,7 +4,7 @@ export class AddProductBtn extends Component {
     render() {
         return (
             <div>
-                <button>add</button>                
+                <button className="material-icons-outlined">chat</button>
             </div>
         )
     }
