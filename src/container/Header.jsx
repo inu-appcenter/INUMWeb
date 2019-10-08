@@ -6,7 +6,6 @@ class Header extends Component {
         return(
             <div className="container">
                 <HeaderTop/>
-                <h1> hello</h1>
             </div>
         )
     }  

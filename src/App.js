@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import HeaderContainer from './container/Header'
+import NavigationContainer from './container/Navigation'
 
 function App() {
   return (
     <div className="App">
       <HeaderContainer/>
+      <NavigationContainer/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
