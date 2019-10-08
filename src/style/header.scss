@@ -1,0 +1,13 @@
+.headerTop{
+    display : flex;
+    
+    // align-items: center;
+    // justify-content: space-between;
+    .headerTopLogo{
+        align-self: center;
+    }
+    .headerTopBtn {
+        align-self: flex-end;
+        display:flex;
+    }
+}

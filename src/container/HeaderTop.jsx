@@ -7,9 +7,9 @@ import ChatBtn from '../component/header/ChatBtn'
 class HeaderTop extends Component{
     render(){
         return(
-            <div>
-                <Logo/>
-                <div>
+            <div className="headerTop">
+                <Logo className="headerTopLogo"/>
+                <div className="headerTopBtn">
                     <UserBtn/>
                     <AddProductBtn/>
                     <ChatBtn/>
