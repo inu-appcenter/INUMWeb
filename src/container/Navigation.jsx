@@ -10,10 +10,13 @@ class Navigation extends Component {
     }
     render() {
         return (
-            <div className="navDiv">
-                {this.state.categoryArray.map((Data)=>{
-                    return (<NavigationItem key={Data} btName={Data}/>)
-                })}
+            <div>
+                <div className="navDiv">
+                    {this.state.categoryArray.map((Data)=>{
+                        return (<NavigationItem key={Data} btName={Data}/>)
+                    })}
+                </div>
+                <div className="navUnderLine"/>
             </div>
         );
     }

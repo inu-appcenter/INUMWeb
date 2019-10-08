@@ -9,6 +9,7 @@ function App() {
     <div className= "App container">
       <HeaderContainer/>
       <NavigationContainer/>
+      <div className="navUnderLine"/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
