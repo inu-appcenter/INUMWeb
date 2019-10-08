@@ -4,7 +4,7 @@ import HeaderTop from './HeaderTop'
 class Header extends Component {
     render(){
         return(
-            <div className="container">
+            <div>
                 <HeaderTop/>
             </div>
         )

@@ -6,7 +6,7 @@ import NavigationContainer from './container/Navigation'
 
 function App() {
   return (
-    <div className="App">
+    <div className= "App container">
       <HeaderContainer/>
       <NavigationContainer/>
       {/* <header className="App-header">

@@ -4,7 +4,7 @@ class NavigationItem extends Component {
     render() {
         return (
             <div>
-                <button>{this.props.btName}</button>
+                <button className="navItem">{this.props.btName}</button>
             </div>
         );
     }
