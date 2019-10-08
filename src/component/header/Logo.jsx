@@ -4,7 +4,7 @@ export class Logo extends Component {
     render() {
         return (
             <div>
-                <p>INUM</p>    
+                <p className="logoP">INUM</p>    
             </div>
         )
     }

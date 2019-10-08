@@ -1,13 +1,43 @@
 .headerTop{
+    position: relative;
+    padding:0;
+    margin:0;
     display : flex;
-    
-    // align-items: center;
-    // justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     .headerTopLogo{
-        align-self: center;
+        margin: 1px;
+        padding: 5px;
+            
     }
     .headerTopBtn {
-        align-self: flex-end;
+        position : absolute;
+        right: 0;
         display:flex;
+        button{
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-left : 2.2rem;
+            object-fit: contain;
+            opacity: 0.53;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+            font-size: 3.6rem
+        }
     }
+    .logoP{
+        font-size: 6.5rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: 31.2px;
+        text-align: left;
+        color: #707070;
+    } 
 }

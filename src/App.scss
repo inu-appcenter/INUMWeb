@@ -1,6 +1,10 @@
 @import './style/header.scss';
 @import '../node_modules/normalize.css/normalize.css';
 
+ html{
+   font-size : 10px;
+ }
+
 .App {
   text-align: center;
 }
