@@ -26,6 +26,7 @@ const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const eslint = require('eslint');
+const glob = require('glob');
 
 const postcssNormalize = require('postcss-normalize');
 
@@ -487,7 +488,10 @@ module.exports = function(webpackEnv) {
               }).concat({
                 loader: require.resolve('sass-loader'),
                 options: {
-                  includePaths: [paths.appSrc + '/styles'],
+                  includePaths: [paths.appSrc + '/styles','./node_modules', './node_modules/@material/*']
+                  .map((d) => path.join(__dirname, d))
+                  .map((g) => glob.sync(g))
+                  .reduce((a, c) => a.concat(c), []),
                   sourceMap: isEnvProduction && shouldUseSourceMap
                 }
               }),

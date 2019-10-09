@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import HeaderContainer from './container/Header'
 import NavigationContainer from './container/Navigation'
+import ItemList from './container/ItemList';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeaderContainer/>
       <NavigationContainer/>
       <div className="navUnderLine"/>
+      <ItemList/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
