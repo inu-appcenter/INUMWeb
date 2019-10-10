@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MainItemList from '../container/MainItemList'
+import Category from '../component/item/Category'
 
 class MainView extends Component {
     constructor(props){
@@ -310,7 +311,12 @@ class MainView extends Component {
         return (
             <div>
                 {this.state.resCategory.map((Data)=>{
-                    return(<MainItemList key={Data.category} resData={Data.categoryArray}/>)
+                    return(
+                    <div className="mainItemBlock">
+                        <Category key={Data.category} category={Data.category}/>
+                        <MainItemList key={Data.category} resData={Data.categoryArray}/>
+                    </div>
+                    )
                 })}
             </div>
         );

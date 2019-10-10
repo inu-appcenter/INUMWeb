@@ -6,7 +6,7 @@ class MainItemList extends Component {
         return (
             <div className = "mainItemList">
                 {this.props.resData.map((Data)=>{
-                    return(<ItemCard/>)
+                    return(<ItemCard key={Data.productId} productName={Data.productName} price={Data.productPrice}/>)
                 })}
             </div>
         );
