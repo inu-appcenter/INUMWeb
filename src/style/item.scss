@@ -3,7 +3,6 @@
     height: 24.8vh;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     background-color: #c8c7c7;
-    margin-right: 2vw;
     .itemDetail{
         width: 16.7vw;
         height: 11.6vh;
@@ -12,7 +11,7 @@
         background-color: $faded_orange;
         .itemHeader{
             background-color: $faded_orange;
-            margin-top:10.9%;
+            margin-top:9%;
             margin-left:5%;
             h2,h3{
                 color: white;
@@ -52,7 +51,7 @@
         .itemBtnGroup{
             // visibility: hidden;
             margin-left:1.6rem;
-            margin-top: 2rem;
+            margin-top: 3%;
             padding: 0;
             .itemBtn{
                 padding: 0;
@@ -110,4 +109,9 @@
     letter-spacing: normal;
     text-align: left;
     color: rgba(0, 0, 0, 0.51);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $faded_orange!important;
 }

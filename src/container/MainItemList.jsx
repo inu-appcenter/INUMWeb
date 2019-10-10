@@ -8,11 +8,11 @@ class MainItemList extends Component {
             dots: true,
             infinite: false,
             speed: 100,
-            slidesToShow: 4,
-            slidesToScroll: 4
+            slidesToShow: 3.4,
+            slidesToScroll: 3
           };
         return (
-            <Slider {...settings}data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' className = "mainItemList">
+            <Slider {...settings} className = "mainItemList">
                 {this.props.resData.map((Data)=>{
                     return(<ItemCard key={Data.productId} productName={Data.productName} price={Data.productPrice}/>)
                 })}
