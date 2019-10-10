@@ -1,8 +1,8 @@
 .navDiv{
     display:flex;
     padding:0;
-    margin-left:23rem;
-    margin-right:23rem;
+    margin-left:12vw;
+    margin-right:12vw;
     margin-bottom:1.1rem;
     flex-direction: row;
     align-items: center;
@@ -27,7 +27,7 @@
 }
 .navUnderLine{
     margin : auto;
-    width: 108.8rem;
+    width: 56.7vw;
     height: 1px;
     background-color: $faded_orange;
 }

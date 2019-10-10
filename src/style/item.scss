@@ -1,48 +1,27 @@
 .itemCard{
-    width: 32rem;
-    height: 30rem;
+    width: 16.7vw;
+    height: 24.8vh;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     background-color: #c8c7c7;
-    .itemHeader{
-        background-color: $faded_orange;
-        margin-top:2.5rem;
-        margin-left:1.6rem;
-        h2,h3{
-            color: white;
-        }
-    }
-    .itemBtnGroup{
-        margin-left:1.6rem;
-        margin-top: 2rem;
-        padding: 0;
-    }
-    .itemBtn{
-        padding: 0;
-        object-fit: contain;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        border: none;
-        cursor:pointer;
-        overflow: hidden;
-        outline:none;
-        // font-family: Roboto;
-        font-size: 1.4rem;
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.43;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
-    }
+    
+    
+    
     .itemDetail{
-        width: 32rem;
-        height: 14rem;
+        width: 16.7vw;
+        height: 11.6vh;
         opacity: 0.5;
         box-shadow: 0 3px 6px 0 rgba(165, 39, 39, 0.16);
         background-color: $faded_orange;
+        .itemHeader{
+            background-color: $faded_orange;
+            margin-top:10.9%;
+            margin-left:5%;
+            h2,h3{
+                color: white;
+            }
+        }
         .itemName{
-            height: 2.9rem;
+            height: 2.4vh;
             // font-family: Roboto;
             font-size: 2.4rem;
             font-weight: normal;
@@ -66,5 +45,40 @@
             text-align: left;
             color: #ffffff;
         }
+
+        @media(max-width:1300px){
+            .itemBtnGroup{
+                visibility: hidden;
+            }
+        }
+        .itemBtnGroup{
+            // visibility: hidden;
+            margin-left:1.6rem;
+            margin-top: 2rem;
+            padding: 0;
+            .itemBtn{
+                padding: 0;
+                object-fit: contain;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                // font-family: Roboto;
+                font-size: 1.4rem;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: left;
+                color: black; // #ffffff;
+            }
+        }
     }
+}
+
+.mainItemList{
+    display:flex;
 }
