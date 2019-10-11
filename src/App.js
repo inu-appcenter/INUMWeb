@@ -8,24 +8,20 @@ import {
   Link
 } from "react-router-dom";
 
-import HeaderContainer from './container/Header'
-import NavigationContainer from './container/Navigation'
-import MainView from './container/MainView';
+import Account from './container/Account';
+import Home from './container/Home';
 
 function App() {
   return (
     <Router>
-      <div className= "App container">
-        <HeaderContainer/>
+      <div className= "App">
         <div>
           <Switch>
             <Route exact path="/">
-              <NavigationContainer/>
-              <div className="navUnderLine"/>
-              <MainView/>
+              <Home/>
             </Route>
             <Route path="/account">
-              
+              <Account/>
             </Route>
           </Switch>
         </div>
