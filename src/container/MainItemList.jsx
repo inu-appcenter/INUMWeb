@@ -8,7 +8,7 @@ class MainItemList extends Component {
             dots: true,
             infinite: false,
             speed: 100,
-            slidesToShow: 3.4,
+            slidesToShow: 3.8,
             slidesToScroll: 3
           };
         return (

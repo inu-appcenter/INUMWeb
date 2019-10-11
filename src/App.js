@@ -1,32 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import HeaderContainer from './container/Header'
 import NavigationContainer from './container/Navigation'
 import MainView from './container/MainView';
 
 function App() {
   return (
-    <div className= "App container">
-      <HeaderContainer/>
-      <NavigationContainer/>
-      <div className="navUnderLine"/>
-      <MainView/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+    <Router>
+      <div className= "App container">
+        <HeaderContainer/>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <NavigationContainer/>
+              <div className="navUnderLine"/>
+              <MainView/>
+            </Route>
+            <Route path="/account">
+              
+            </Route>
+          </Switch>
+        </div>
+        
+      </div>
+    </Router>
   );
 }
 
