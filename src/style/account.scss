@@ -1,4 +1,45 @@
+@keyframes slideLeftToRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.inputFrom{
+    height: 100vh;
+    width:57.6vw;
+}
+.accountForm{
+    display: flex;
+    height:100vh;
+    .loginForm{
+        margin-top:37.6vh;
+        margin-left:15.2vw;
+        display: flex;
+        flex-direction: column;
+        input{
+            margin-bottom:7.4vh;
+            width:27.9vw;
+            height: 3.7vh;
+        }
+        button{
+            margin-top:-0.9vh;
+            margin-left:auto;
+            margin-right: auto;
+            width: 13.5vw;
+            height: 6.1vh;
+            border-radius: 3.3rem;
+            border: solid 1px #707070;
+            background-color: $faded-orange;
+    }
+    }
+}
+
 .introBlock{
+    animation: 2s ease-out 0s 1 slideLeftToRight;
     height: 100vh;
     width: 42.4vw;
     background-color: $faded_orange;
@@ -17,12 +58,11 @@
         color: #ffffff;
     }
     .introText{
-        padding-left:14rem;
+        padding-left:7.3vw;
     }
     .introHeader{
-        margin-top:27rem;
+        margin-top:25vh;
         width: 100%;
-        height: 6.6rem;
         font-family: Roboto;
         font-size: 5.0rem;
         font-weight: 500;
@@ -34,9 +74,8 @@
         color: #ffffff;
     }
     .introSub{
-        margin-top:4.4rem;
+        margin-top:4.1vh;
         width: 100%;
-        height: 4.7rem;
         font-family: Roboto;
         font-size: 3.5rem;
         font-weight: 500;
@@ -48,10 +87,10 @@
         color: #ffffff;
     }
     .introBtn{
-        margin-left:14rem;
-        margin-top : 10.4rem;
-        width: 260px;
-        height: 66px;
+        margin-left:7.3vw;
+        margin-top : 9.6vh;
+        width: 13.5vw;
+        height: 6.1vh;
         border-radius: 33px;
         border: solid 1px #ffffff;
         background-color: $faded_orange;

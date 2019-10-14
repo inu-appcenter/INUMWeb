@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
 import IntroBlock from '../component/account/IntroBlock'
+import InputForm from './InputForm';
 
 class Account extends Component {
     render() {
         return (
-            <div>
+            <div className="accountForm">
                 <IntroBlock/>
+                <InputForm/>
             </div>
         );
     }
